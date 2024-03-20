@@ -1,0 +1,51 @@
+# Ignorar archivos de configuración locales
+wp-config.php
+
+# Ignorar la carpeta de subidas de medios
+wp-content/uploads/
+
+# Ignorar los archivos generados por plugins y temas
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/backup-db
+wp-content/backup-duplication
+wp-content/cache/
+wp-content/debug.log
+wp-content/upgrade
+wp-content/wp-cache-config.php
+wp-content/wordfence-waf.php
+wp-content/wordfence-waf.php
+
+# Ignorar los archivos de respaldo
+*.sql
+*.log
+*.log.*
+*.log.old
+*.log.zip
+*.log.1
+*.log.bak
+*.log_backup
+*.log.txt
+*.sql.zip
+*.sql.bak
+*.sql.1
+*.sql.bak1
+*.sql.bak2
+*.sql.old
+*.sql.gz
+*.sql.tar
+*.sql.rar
+*.sql.tar.gz
+*.sql.tgz
+*.sql.tar.bz2
+*.sql.7z
+*.sql.xz
+
+# Ignorar los archivos de registro y errores
+error_log
+.htaccess
+.htpasswds
+*.php~
+*.old
