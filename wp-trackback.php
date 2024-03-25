@@ -96,7 +96,18 @@ if ( empty( $title ) && empty( $trackback_url ) && empty( $blog_name ) ) {
 }
 
 if ( ! empty( $trackback_url ) && ! empty( $title ) ) {
-
+	/**
+	 * Fires before the trackback is added to a post.
+	 *
+	 * @since 4.7.0
+	 *
+	 * @param int    $post_id       Post ID related to the trackback.
+	 * @param string $trackback_url Trackback URL.
+	 * @param string $charset       Character set.
+	 * @param string $title         Trackback title.
+	 * @param string $excerpt       Trackback excerpt.
+	 * @param string $blog_name     Site name.
+	 */
 	do_action( 'pre_trackback_post', $post_id, $trackback_url, $charset, $title, $excerpt, $blog_name );
 
 	header( 'Content-Type: text/xml; charset=' . get_option( 'blog_charset' ) );
